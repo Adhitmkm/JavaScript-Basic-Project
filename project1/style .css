@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.maindiv {
+    height: 100Vh;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    height: 70Vh;
+    width: 30%;
+    background-color: aqua;
+    text-align: center;
+}
+#kitchen-input {
+    height: 30px;
+    width: 220px;
+}
+#add-btn {
+    height: 30px;
+    width: 60px;
+    color: white; 
+    background-color: black;
+}
+#add-btn:hover{
+    color: black;
+    background-color: rgb(252, 243, 243);
+    box-shadow: 0cap;
+}
+#kitchen-item-list {
+    list-style: none;
+    width: 280px;
+    margin-left: 10px ;
+    margin-top: 10px;
+    height: 30px; 
+    background-color: rgb(125, 192, 192);
+    text-align: center;
+    
+}
+#kitchen-item-list li {
+    background-color: rgb(149, 170, 170);    width: 280px;
+    margin-top: 10px;
+    height: 30px; 
+    /* margin: 5px; */
+    animation: 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* animation-name: slideIn; */
+    
+
+}
+
+#kitchen-item-list li i {
+    /* background-color: white; */
+    /* color: black; */
+    height: 27px;
+    width: 25px;
+    /* justify-content: space-around; */
+}
+
+.fa-trash, .fa-edit {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 6px ,10px;
+    text-align: center;
+
+}
+.fa-trash {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: rotateX('60deg') translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX('0deg') translateX(0px);
+    }
+}
+
+.slideOut {
+    transform: rotateX('60deg') translateX(-10px);
+    transition: 1s;
+}
