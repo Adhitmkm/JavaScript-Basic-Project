@@ -8,7 +8,9 @@ let isVideoPlaying = false;
 
 //Lets play or pause function
 function playOrPauseVideo(e) {
-    console.log(e)
+    console.log(this)
+    // console.log(e)
+
     if(!isVideoPlaying) {              //if(!isVideoPlaying)or if(isVideoPlaying == false) both are same
         video.play()
         isVideoPlaying = true;
@@ -33,7 +35,7 @@ function updateProgressbar(event) {
 
 // ivadey update seekbar
 function updateSeekbar(event) {
-    console.log(event)
+    // console.log(event)
     // console.log(event.offsetX,event.target.clientWidth)
     let currectPoint = event.offsetX;
     // let progressbarWidth = event.target.clientWidth;
