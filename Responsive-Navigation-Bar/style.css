@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header-section {
+    background-color: rgba(9, 38, 46, 0.849);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-section .logo {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-section .ull{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.header-section ul li {
+    cursor: pointer;
+    list-style: none;
+    /* justify-content: space-between; */
+}
+.header-section .toogle .toogle-logo {
+    display: none;
+}
+
+@media(max-width:767px) {
+
+    .header-section .toogle .toogle-logo {
+        display: block;
+    }
+
+
+    /* .header-section .menu{
+        display: none;        
+    } */ 
+    /* ith oyivakki animation aakam  */
+    
+    .header-section .menu{
+        transform: translateX(100%);   
+        transition: transform ease 0.3s;   
+    }
+    
+
+
+    .header-section .menu{
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        right: 0;    
+        top: 50px; 
+        height: 90vh;
+
+    }
+
+    /* .header-section .menu.is-active{
+        display: block;
+
+    } */
+     /* ithum matanam animation aakan */
+
+     .header-section .menu.is-active{
+        transform: translateX(0%);
+
+    }
+
+    .header-section .menu{
+        padding: 10px 5px;
+        display: block;
+    }
+    .header-section .menu a{
+        padding: 10px 5px;
+        display: block;
+    }
+
+}

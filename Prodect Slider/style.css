@@ -1,0 +1,53 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Variable */
+
+:root {
+    --color1 :#e49b96;
+    --color1 :#80c5d8;
+    --color1 :#f6eddd;  
+}
+
+.product-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-wrapper img{
+    max-width: 800px;
+    position: absolute;
+    /* onniney centeril kond veran */
+    top: 50%;
+    left: 50%;
+    transform: translate(-59%,-50%);
+}
+
+.product-colors {
+    width: 100%;
+    height: inherit;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.product-colors .product-color {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.product-color .color1, .wall-color .color1 {
+    background: green;
+}
