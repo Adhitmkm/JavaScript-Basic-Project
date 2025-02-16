@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.hmn {
+    margin: 30px;
+}
+
+#dish-list {
+    text-align: center;
+    list-style: none;
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    border: 10px;
+}
+#dish-list li {
+    border: 0.5px solid;
+    padding: 10px;
+    color: white
+}
+#dish-list li:hover {
+    color: aqua;
+}
+#dish-list li h3{
+    cursor: pointer;
+}
+
